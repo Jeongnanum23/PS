@@ -167,7 +167,7 @@ int applyMyClasses(int my[], int msize, struct st_class* c[], int csize){
             while(1){
                 printf(">> Add more?( 1:Yes 2:No) > ");
                 scanf("%d", &flag);
-                if(flag!=1 || flag!=2){
+                if(flag!=1 && flag!=2){
                     printf("wrong input!!\n");
                 }else{
                     break;

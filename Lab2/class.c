@@ -163,12 +163,15 @@ int applyMyClasses(int my[], int msize, struct st_class* c[], int csize){
         if(code_check==0){
             printf("No such code of class.\n");
         }
-
-        printf(">> Add more?( 1:Yes 2:No) > ");
-        scanf("%d", &flag);
-        if(flag == 2){
-            break;
+        else{
+            printf(">> Add more?( 1:Yes 2:No) > ");
+            scanf("%d", &flag);
+            if(flag == 2){
+                break;
+            }
         }
+
+
     }
 	
 	return msize;

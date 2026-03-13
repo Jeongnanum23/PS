@@ -143,7 +143,6 @@ int applyMyClasses(int my[], int msize, struct st_class* c[], int csize){
 
         for(int i = 0; i<csize; i++){
             if(c[i]->code == code){
-                code_check =1;
                 for(int j =0; j<msize;j++){
                     if(my[j]==code){
                         printf("class already added\n");
@@ -154,6 +153,7 @@ int applyMyClasses(int my[], int msize, struct st_class* c[], int csize){
                 if(found ==0){
                     printf("[%d] %s [credit %d - %s]\n",c[i]->code, c[i]->name, c[i]->unit, kname[c[i]->grading-1]);
                     my[msize] = code;
+                    code_check =1;
                     msize++;
                     break;
                 }

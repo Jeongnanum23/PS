@@ -160,7 +160,7 @@ int applyMyClasses(int my[], int msize, struct st_class* c[], int csize){
             
             }
         }
-        if(code_check==0){
+        if(code_check==0 && found==0){
             printf("No such code of class.\n");
         }
         else{
